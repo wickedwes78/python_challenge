@@ -45,7 +45,7 @@ with open(csvpath) as csvfile:
     print ("Greatest Decrease in Profits: ",str(Months[ProfitChange.index(min(ProfitChange))+1])," ",f"(${GreatestDecrease:,})")
 
     #Export data found to a text file
-    file = open("output.txt","w")
+    file = open("analysis/output.txt","w")
     file.write("Financial Analysis"+"\n")
     file.write("----------------------------"+"\n")
     file.write ("Total Months: "+ str(Total_Months)+ "\n")
