@@ -33,7 +33,7 @@ with open(csvpath) as csvfile:
    
     #Calculate greatest increase and decrease of monthly profit change
     GreatestIncrease = max(ProfitChange)
-    GreatestDecrease = min(ProfitChange)
+    GreatestDecrease = min(ProfitChange).
 
     #return data found
     print("Financial Analysis")
@@ -41,8 +41,8 @@ with open(csvpath) as csvfile:
     print ("Total Months: ", str(Total_Months))
     print ("Total Profit: ", f"${sum(NetProfit):,}")
     print ("Average Change: ", f"${average_change:,.2f}")
-    print ("Greatest Increase in Profits: ",str(Months[ProfitChange.index(max(ProfitChange))+1])," ",f"(${GreatestIncrease:,})")
-    print ("Greatest Decrease in Profits: ",str(Months[ProfitChange.index(min(ProfitChange))+1])," ",f"(${GreatestDecrease:,})")
+    print ("Greatest Increase in Profits: ",str(Months[ProfitChange.index(max(ProfitChange))+1])," ",f"${GreatestIncrease:,}")
+    print ("Greatest Decrease in Profits: ",str(Months[ProfitChange.index(min(ProfitChange))+1])," ",f"${GreatestDecrease:,}")
 
     #Export data found to a text file
     file = open("analysis/output.txt","w")
