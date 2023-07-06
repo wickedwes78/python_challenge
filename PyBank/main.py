@@ -33,7 +33,7 @@ with open(csvpath) as csvfile:
    
     #Calculate greatest increase and decrease of monthly profit change
     GreatestIncrease = max(ProfitChange)
-    GreatestDecrease = min(ProfitChange).
+    GreatestDecrease = min(ProfitChange)
 
     #return data found
     print("Financial Analysis")
